@@ -7,9 +7,12 @@ import { Container } from 'react-bootstrap';
 import logo from "./logo.svg";
 import "./SideNav.css";
 
+
+
 function SideNav() {
   
   return (
+
 
     //creates a container using the `Container` component from react-bootstrap, which holds the sidebar.
 
@@ -31,7 +34,7 @@ function SideNav() {
 
         <Nav className="flex-column mt-4 mb-4">
           <Nav.Link href="#overview"><FaHome className="menu-icon" /><span className="menu-text">Overview</span></Nav.Link>
-          <Nav.Link href="#my-class"><FaChalkboardTeacher className="menu-icon" /><span className="menu-text">My Class</span></Nav.Link>
+          <Nav.Link href="#profile"><FaChalkboardTeacher className="menu-icon" /><span className="menu-text">Profile</span></Nav.Link>
           <Nav.Link href="#courses"><FaGraduationCap className="menu-icon" /><span className="menu-text">Courses</span></Nav.Link>
           <Nav.Link href="#messages"><FaEnvelope className="menu-icon" /><span className="menu-text">Messages</span></Nav.Link>
           <Nav.Link href="#instructors"><FaUsers className="menu-icon" /><span className="menu-text">Instructors</span></Nav.Link>
@@ -49,7 +52,7 @@ function SideNav() {
 
     {/* search bar using Bootstrap's Form and FormControl components */}
 
-    <Form inline className="w-10 mt-3 search-form">
+    <Form inline className="w-50 mt-3 search-form">
     <FormControl type="text" placeholder="Search" className="mr-sm-2 search-input" />
     </Form>
 

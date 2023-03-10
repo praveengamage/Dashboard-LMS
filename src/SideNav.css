@@ -6,7 +6,7 @@
 
 .menu-icon:hover,
 .menu-text:hover {
-  color: white;
+  color: white !important;
 }
 
 
@@ -15,6 +15,10 @@
   color: white;
 }
 
+.sidebarContainer .nav-link .menu-icon,
+.sidebarContainer .nav-link .menu-text {
+  color: black;
+}
 .navbar {
     border-radius: 15px;
     padding: 0;
@@ -93,3 +97,38 @@
     padding-left: 10px;
   }
   
+  
+
+
+
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .user-profile span {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+  
+  .bell-icon {
+    position: relative;
+  }
+  
+  .bell-icon:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+   
+  }  
